@@ -263,7 +263,7 @@ $.Viewer = function( options ) {
     this.element              = this.element || document.getElementById( this.id );
     this.canvas               = $.makeNeutralElement( "div" );
 
-    this.canvas.className = "openseadragon-canvas";
+    this.canvas.className = "zoomable-canvas";
     (function( style ){
         style.width    = "100%";
         style.height   = "100%";
@@ -278,7 +278,7 @@ $.Viewer = function( options ) {
     }
 
     //the container is created through applying the ControlDock constructor above
-    this.container.className = "openseadragon-container";
+    this.container.className = "zoomable-container";
     (function( style ){
         style.width     = "100%";
         style.height    = "100%";
